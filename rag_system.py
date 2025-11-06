@@ -79,7 +79,7 @@ class PaperQASystem:
         
         # split documents into chunks
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_soze=self.chunk_size,
+            chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap,
             length_function=len
         )
