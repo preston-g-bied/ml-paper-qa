@@ -9,7 +9,8 @@ from pathlib import Path
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_openai import ChatOpenAI
+from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores.faiss import FAISS
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
